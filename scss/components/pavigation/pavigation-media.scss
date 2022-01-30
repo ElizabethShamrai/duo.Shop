@@ -1,0 +1,41 @@
+@include tablet {
+    .pavigation {
+        .row {
+            justify-content: center;
+        }
+        .navbar-nav {
+            width: 24%;
+        }
+        &__bot {
+            display: initial;
+            width: 90%;
+        }
+    }
+}
+
+@include mobile {
+    .pavigation {
+        .row {
+            justify-content: center;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .navbar-nav {
+            width: 24%;
+        }
+        &__bot {
+            display: initial;
+            width: 70%;
+        }
+        &__bot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+    }
+}

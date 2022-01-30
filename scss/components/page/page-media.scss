@@ -1,0 +1,81 @@
+@include desktop {
+    .page {
+        .text {
+            margin: 0 0 30px
+        }
+        &__product {
+            justify-content: space-between;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__upper {
+            width: 100%;
+        }
+        &__filters {
+            display: flex;
+        }
+        &__flex {
+            display: flex;
+        }
+    }
+}
+
+@include laptop {
+    .page {
+        .wrapper {
+            width: 49%;
+        }
+        &__flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__detail img {
+            padding: 0 48px;
+        }
+    }
+}
+
+@include tablet {
+    .page {
+        .wrapper {
+            width: 425px;
+        }
+        &__bot {
+            display: initial;
+        }
+        &__bot-right {
+            max-width: 15%;
+            display: inline-block;
+        }
+        &__product {
+            flex-direction: column;
+        }
+        &__detail img {
+            padding: 0 60px;
+            transform: scale(1.1);
+        }
+    }
+}
+
+@include mobile {
+    .page {
+        .wrapper {
+            width: 375px;
+        }
+        &__detail img {
+            padding: 0 40px;
+        }
+    }
+}
+
+@include mobile_s {
+    .page {
+        .wrapper {
+            width: 320px;
+        }
+        &__detail img {
+            padding: 0 20px;
+        }
+    }
+}

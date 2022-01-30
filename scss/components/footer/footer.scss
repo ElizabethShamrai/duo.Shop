@@ -1,0 +1,81 @@
+.footer {
+    background-color: $footer-color;
+    padding: 50px 0 0;
+    .container {
+        max-width: 1200px;
+    }
+    &__main {
+        padding-bottom: 20px;
+    }
+    &__icon {
+        padding-right: 10px;
+    }
+    &__icon-bot {
+        padding-top: 25px;
+    }
+    &__contact {
+        padding-top: 20px;
+    }
+    &__text a {
+        @extend %footer-links;
+    }
+    h2 {
+        font-size: $font-size-xl;
+        padding-bottom: 15px
+    }
+    &__center-links a {
+        @extend %footer-links;
+    }
+    &__left {
+        width: 20%;
+    }
+    &__center {
+        @extend %dis-f-wrap;
+        gap: 50px;
+    }
+    &__inform {
+        gap: 90px;
+    }
+    &__right-border {
+        border-radius: 40px;
+        right: 40px;
+        border: 0.5px solid $color-gray;
+    }
+    .input-group {
+        padding: 14px 11px 14px 30px
+    }
+    &__send {
+        max-width: 135px;
+        margin-right: 20px
+    }
+    &__right-text {
+        padding-bottom: 35px;
+    }
+    &__group {
+        padding: 14px 0;
+        img {
+            filter: invert(1);
+        }
+        option {
+            background-color: $footer-color;
+        }
+    }
+    .select {
+        padding: 0 6px;
+        appearance: none;
+        background: url('./../images/icons/felement.svg') no-repeat right;
+    }
+    &__right-icons {
+        padding: 35px 0 0;
+    }
+    &__bot {
+        background-color: $color-black;
+        color: $color-span;
+        span {
+            padding-right: 30px;
+        }
+        &-img:hover {
+            background-color: brown;
+        }
+    }
+}

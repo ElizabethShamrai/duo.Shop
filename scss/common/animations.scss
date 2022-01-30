@@ -1,0 +1,21 @@
+// @keyframes slide_product {
+//     from {
+//         transform: translateX(-100%);
+//     }
+//     50% {
+//         transform: translateX(0);
+//     }
+//     to {
+//         transform: translateX(0);
+//     }
+// }
+// .page__detail {
+//     animation-name: slide_product;
+//     animation-iteration-count: infinite;
+// }
+// .products .single_product:nth-child(odd) .page__detail {
+//     animation-duration: 7s;
+// }
+// .products .single_product:nth-child(even) .page__detail {
+//     animation-duration: 6s;
+// }

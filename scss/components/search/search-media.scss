@@ -1,0 +1,11 @@
+@include mobile {
+    .search {
+        &__bot {
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__right {
+            width: 58%;
+        }
+    }
+}

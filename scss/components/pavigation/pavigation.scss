@@ -1,0 +1,46 @@
+.pavigation {
+    padding-bottom: 60px;
+    .row {
+        justify-content: end
+    }
+    &__bg {
+        @extend %page-left-right;
+        background-color: $color-span;
+        // mix-blend-mode: hard-light;
+        &:hover {
+            background-color: $color-salt;
+            transition: 0.3s;
+        }
+    }
+    .nav-link {
+        background: white;
+        padding: 8px 22px;
+        border-radius: 25px;
+        color: black;
+    }
+    .pagination {
+        display: flex;
+        span {
+            padding: 0 15px;
+        }
+    }
+    .dropdown-menu {
+        min-width: 0;
+        padding: 10px;
+    }
+    a {
+        text-decoration: none;
+    }
+    &__bot {
+        @include flex(space-between);
+        align-items: center;
+        width: 78%;
+    }
+    &__bg-a {
+        background-color: $color-white;
+        font-weight: 700;
+        color: $color-black;
+        padding: 6px 30px;
+        border-radius: 100px;
+    }
+}

@@ -1,0 +1,49 @@
+    .header {
+        box-shadow: 1px 0px 10px 0px #00000059;
+        position: relative;
+        &__top {
+            background-color: $top-bg;
+            padding-bottom: 5px;
+        }
+        &__bot {
+            padding: 20px 0 20px;
+        }
+        span,
+        select {
+            font-size: $font-size-xs;
+        }
+        .hover-link:hover {
+            background-color: $main-color;
+            border-radius: 101px;
+            transition: 0.2s;
+        }
+        &__pad {
+            padding: 0 70px 0 50px;
+        }
+        &__gap {
+            gap: 30px;
+        }
+        &__search-input {
+            display: none;
+            &:focus {
+                display: initial;
+                box-shadow: 4px 3px 5px 0rem $color-salt;
+                border: 1px solid $color-salt;
+            }
+        }
+        &__search {
+            &:hover,
+             :active {
+                .header__search-input {
+                    display: initial;
+                }
+            }
+        }
+        &__search-button {
+            border: none;
+            transition: 0.3s;
+            background-color: transparent;
+            padding: 15px;
+            margin: 0 55px 0 13px;
+        }
+    }

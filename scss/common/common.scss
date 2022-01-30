@@ -1,0 +1,58 @@
+body {
+    font-family: $main-font;
+    font-size: $font-size-md;
+}
+
+.container {
+    max-width: $breakpoint_xxl;
+}
+
+main {
+    padding-top: 30px;
+    background-color: $main-bg;
+}
+
+@include desktop {
+    .container,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_xl;
+    }
+}
+
+@include laptop {
+    .container,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_lg;
+    }
+}
+
+@include tablet {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_md;
+    }
+}
+
+@include mobile {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_sm;
+    }
+}
+
+@include mobile_s {
+    .container,
+    .container-sm {
+        max-width: $breakpoint_xs;
+    }
+}
